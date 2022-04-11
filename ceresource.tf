@@ -18,3 +18,6 @@ resource "google_compute_instance" "jkl" {
     network = "default"
     }
 }
+dd
+dd
+dd
