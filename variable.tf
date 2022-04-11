@@ -1,6 +1,6 @@
-variable "project" { }
+variable "projectname" { }
 
-variable "credentials_file" { }
+variable "serviceaccount" { }
 
 variable "region" {
   default = "us-central1"
@@ -15,5 +15,3 @@ variable "name" { }
 variable "machine" {  } 
 
 variable "location" { } 
-
-

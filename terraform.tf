@@ -8,11 +8,9 @@ terraform {
 
 provider "google" {
   
-  credentials = file(var.credentials_file)
-  project = var.project
-  region  = var.region
-  zone    = var.zone
-  
+  credentials = file(var.serviceaccount)
+  project = var.projectname
+   
 }	
 
 resource "google_compute_instance" "jkl" {
@@ -30,6 +28,5 @@ resource "google_compute_instance" "jkl" {
 
   network_interface {
     network = "default"
-    }								
-    
     }
+}
